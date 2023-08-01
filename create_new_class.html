@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
+
+{% endblock %}
+
+{% block title %}Create New Class{% endblock %}
+
+{% block content %}
+<div>
+  <h1>Create a New Class </h1>
+  <form method="POST" action="/create_new_class">
+    <label for="class_name">Class Name:</label>
+    <input type="text" id="class_name" name="class_name" required>
+    <input type="submit" value="Create">
+  </form>
+</div>
+{% endblock %}
