@@ -1,0 +1,21 @@
+{% extends "base.html" %} 
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
+
+{% endblock %}
+
+{% block title %}Home{% endblock %} 
+{% block content%}
+    
+    <h1>Upload a Zip File</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="folder_name">Class Name:</label>
+        <input type="text" name="folder_name"><br><br>
+        <label for="zip_file">Zip File:</label>
+        <input type="file" name="zip_file"><br><br>
+        <label for = "alert">File name should be in Roll_num_name format</label>
+        <input type="submit" value="Upload">
+    </form>
+{% endblock %}
+    
