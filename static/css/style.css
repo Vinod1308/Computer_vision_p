@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e9f2f9; /* Pastel blue background color */
+  }
+  .flashmsg{
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    border-bottom: 5px solid #1b509e;
+    padding: 10px 10px;
+    /* border-radius: 5px; */
+    background-color: #6988b5;
+  }
+  .msgbtnstyle{
+    border: none;
+    background: none;
+    font-size: 20px;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #3165ac; /* Dark blue highlight color */
+    font-weight: bold;
+  }
+  
+  form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 40px;
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  input[type=email], input[type=password], input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  
+  input[type=submit] {
+    background-color: #3165ac; /* Dark blue highlight color */
+    display: block;
+    color: #fff;
+    padding: 12px 20px;
+    margin-top: 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out; /* Transition for hover effect */
+  }
+  
+  input[type=submit]:hover {
+    background-color: #e9f2f9;
+    color: #3165ac; /* Dark blue highlight color */
+  }
+  
+  /* Animations */
+  form {
+    animation: slide-up .5s ease-in-out;
+  }
+  
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .form-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input[type=file] {
+    /* other styles... */
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
