@@ -1,0 +1,24 @@
+
+
+
+{% extends "base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+{% endblock %}
+
+{% block title %}Home{% endblock %}
+{% block content%}
+
+
+<img src="{{ url_for('static', filename='images/ClassVision.png') }}" alt="home_logo" id="logo">
+<main>
+  <section id="hero">
+      <div class="container">
+          <h1>Say goodbye to manual attendance-taking.</h1>
+          <p>Introducing Class Vision - a smart computer vision-based attendance system that uses facial recognition technology to accurately and efficiently identify students in a classroom with just a single photo, seamlessly recording their attendance.</p>
+      </div>
+  </section>
+</main>
+{% endblock %}
